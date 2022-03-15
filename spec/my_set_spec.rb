@@ -70,16 +70,16 @@ describe MySet do
   #     end
   #   end
 
-  # describe "#clear" do
-  #   it "removes all the items from the set" do
-  #     set.clear
-  #     expect(set.instance_variable_get(:@hash)).to eq({})
-  #   end
+  describe "#clear" do
+    it "removes all the items from the set" do
+      set.clear
+      expect(set.instance_variable_get(:@hash)).to eq({})
+    end
     
-  #   it "returns the updated set" do
-  #     expect(set.clear).to be(set)
-  #   end
-  # end
+    it "returns the updated set" do
+      expect(set.clear).to be(set)
+    end
+  end
 
   #   describe "#each" do
   #     it "iterates over each object in the set" do
